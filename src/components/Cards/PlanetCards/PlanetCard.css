@@ -1,0 +1,20 @@
+.desc-text {
+  padding: 5px;
+  overflow: hidden;
+}
+
+.desc-container {
+  display: flex;
+  justify-content: center;
+}
+
+.desc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+  margin-right: 24px;
+  padding: 0 7px;
+}
