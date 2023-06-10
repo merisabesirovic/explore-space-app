@@ -45,6 +45,7 @@ export default function PlanetCard({ name, image, desc, wikiLink }) {
         sx={{ justifyContent: "flex-end" }}
       >
         <Typography
+          className="name"
           style={{ overflow: "hidden" }}
           level="h2"
           fontSize="lg"

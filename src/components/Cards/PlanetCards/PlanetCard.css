@@ -1,9 +1,13 @@
-@import url("../../../components/fonts/fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap");
 .desc-text {
   padding: 5px;
   overflow: hidden;
   font-family: "Source Code Pro", monospace;
   font-weight: 100;
+}
+.name {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
 }
 
 .desc-container {
