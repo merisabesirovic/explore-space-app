@@ -1,6 +1,7 @@
 import "./App.css";
 import axios from "axios";
 import PlanetImages from "./pages/PlanetImages/PlanetImages";
+import MarsGenerator from "./pages/MarsGenerator/MarsGenerator";
 
 // const applicationId = "652b04fe-79e5-449f-8b25-20a9be50f935";
 // const applicationSecret =
@@ -50,6 +51,7 @@ function App() {
     <div className="App">
       {" "}
       <PlanetImages></PlanetImages>
+      <MarsGenerator></MarsGenerator>
     </div>
   );
 }
