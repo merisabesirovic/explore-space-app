@@ -1,6 +1,9 @@
+@import url("../../../components/fonts/fonts.css");
 .desc-text {
   padding: 5px;
   overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 100;
 }
 
 .desc-container {
