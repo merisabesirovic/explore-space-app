@@ -25,12 +25,7 @@ export default function PlanetCard({ name, image, desc, wikiLink }) {
       onMouseLeave={handleMouseLeave}
     >
       <CardCover>
-        <img
-          src={image}
-          srcSet="https://images.unsplash.com/photo-1542773998-9325f0a098d7?auto=format&fit=crop&w=320&dpr=2 2x"
-          loading="lazy"
-          alt=""
-        />
+        <img src={image} loading="lazy" alt="" />
       </CardCover>
       {isHovered && (
         <CardCover

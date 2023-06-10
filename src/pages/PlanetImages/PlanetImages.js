@@ -20,7 +20,7 @@ const PlanetImages = () => {
         const response = await axios(options);
         const info = await response.data;
         setData(info);
-        console.log(allData);
+        // console.log(allData);
       } catch (error) {
         console.error(error);
       }
