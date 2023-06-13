@@ -23,4 +23,5 @@ justify-content: space-between;
 .navbar .links h3{
     color: #fff;
     margin-right: 2vw;
+    cursor: pointer;
 }
