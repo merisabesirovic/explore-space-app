@@ -49,7 +49,6 @@ import MarsGenerator from "./pages/MarsGenerator/MarsGenerator";
 function App() {
   return (
     <div className="App">
-      {" "}
       <PlanetImages></PlanetImages>
       <MarsGenerator></MarsGenerator>
     </div>

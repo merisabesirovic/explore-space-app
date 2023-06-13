@@ -16,12 +16,15 @@
   flex-direction: column;
   justify-content: center;
 }
+.date-select {
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+}
 
 .date-picker {
-  .date-picker {
-    border: 2px solid rgb(255, 252, 252);
-    border-radius: 4px;
-  }
+  width: fit-content;
+  height: fit-content;
 }
 .mars-title {
   font-family: "Source Code Pro", monospace;
@@ -29,11 +32,14 @@
   font-size: 3rem;
   color: #ffffff;
 }
-
+.date-input {
+  display: flex;
+  justify-content: center;
+}
 .date-picker input[type="text"] {
   font-family: "Source Code Pro", monospace;
   font-weight: bold;
-  color: #ffffff;
+  color: black;
 }
 .img-title {
   font-family: "Source Code Pro", monospace;

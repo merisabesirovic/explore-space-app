@@ -1,19 +1,31 @@
 import React, { useEffect, useState } from "react";
-import { DatePicker } from "@mui/x-date-pickers";
-import { LocalizationProvider } from "@mui/x-date-pickers";
 import dayjs from "dayjs";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import "./MarsGenerator.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const KEY = "OIabT3zBh1iqsJkFE3T740jK32aDZRoV5CgWqC3D";
 
 export default function MarsGenerator() {
   const [pictureData, setPictureData] = useState(null);
-  const today = dayjs().subtract(2, "days").format("YYYY-MM-DD");
-  console.log(today);
-  const [date, setDate] = useState(dayjs(today));
+  const [startDate, setStartDate] = useState(() => {
+    const date = new Date();
+    date.setDate(date.getDate() - 3);
+    return date;
+  });
+
+  function formatDate(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
+
+    return `${year}-${month}-${day}`;
+  }
+
+  console.log(formatDate(startDate));
+
   const [page, setPage] = useState(1);
   const handleChange = (event, value) => {
     setPage(value);
@@ -26,8 +38,8 @@ export default function MarsGenerator() {
     async function fetchPhoto() {
       try {
         const res = await fetch(
-          `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${date.format(
-            "YYYY-MM-DD"
+          `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${formatDate(
+            startDate
           )}&api_key=${KEY}`
         );
         const data = await res.json();
@@ -37,23 +49,26 @@ export default function MarsGenerator() {
         console.log(error);
       }
     }
-  }, [date]);
+  }, [startDate]);
+
   const numOfPages = Math.ceil((pictureData?.length || 0) / imagePerPage);
 
   return (
     <div className="mars">
       <h1 className="mars-title">Pick a Date to see photos from Mars </h1>
       <p className="note">
-        *Note that we cannot provide photos from today or tommorow{" "}
+        *Note that we cannot provide photos from today or tomorrow{" "}
       </p>
-      <div className="date-picker">
-        <LocalizationProvider dateAdapter={AdapterDayjs} locale="en">
+      <div className="date-select">
+        <div className="date-picker">
           <DatePicker
-            className="date-picker"
-            value={date}
-            onChange={(newValue) => setDate(newValue)}
+            className="date-input"
+            showIcon
+            placeholderText="Enter a date"
+            selected={startDate}
+            onChange={(newValue) => setStartDate(newValue)}
           />
-        </LocalizationProvider>
+        </div>
       </div>
       {pictureData && pictureData.length > 0 ? (
         <div className="mars2">
