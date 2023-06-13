@@ -16,12 +16,15 @@
   flex-direction: column;
   justify-content: center;
 }
-
-.date-picker {
+.date-select {
   display: flex;
   justify-content: center;
+  overflow-y: hidden;
+}
+
+.date-picker {
   width: fit-content;
-  overflow: hidden;
+  height: fit-content;
 }
 .mars-title {
   font-family: "Source Code Pro", monospace;
@@ -29,7 +32,10 @@
   font-size: 3rem;
   color: #ffffff;
 }
-
+.date-input {
+  display: flex;
+  justify-content: center;
+}
 .date-picker input[type="text"] {
   font-family: "Source Code Pro", monospace;
   font-weight: bold;

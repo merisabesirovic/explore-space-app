@@ -1,12 +1,16 @@
 .planet-image-container {
-  padding: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  background-color: rgb(19, 18, 18);
-  width: 100vw;
+  /* background-color: rgba(19, 18, 18, 0.747); */
+  width: 100%;
   height: 100vh;
+  padding: 30px 0;
 }
-* {
-  overflow-x: hidden;
+
+.bg {
+  background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701913961-optimized.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
 }
