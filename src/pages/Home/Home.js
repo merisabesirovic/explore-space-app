@@ -18,6 +18,11 @@ export default function Home() {
       />
       <div className="text-overlay">
         <h2 className="mars-title">Explore space with us!</h2>
+        <p className="galaxy-description" style={{ textAlign: "center" }}>
+          Explore the vast wonders of space and delve into the mysteries of{" "}
+          <br></br>
+          galaxies, stars, and celestial phenomena.
+        </p>
       </div>
     </div>
   );
