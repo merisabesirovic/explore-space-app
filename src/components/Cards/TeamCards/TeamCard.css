@@ -1,0 +1,31 @@
+.team-card{
+    width: 350px;
+    height: 350px;
+    margin-left: 30px;
+}
+
+.card-image{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+.about-icons{
+    color: black;
+    font-size: 40px;
+}
+.icon1{
+    margin-left: 10px;
+}
+.card-image img{
+    height: 95%;
+    border-radius: 50%;
+}
+
+.team-card h3{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+}
