@@ -14,7 +14,7 @@ export default function Home() {
         loop={true}
         muted={true}
         width="100%"
-        height="100%"
+        height="90%"
       />
       <div className="text-overlay">
         <h2 className="mars-title">Explore space with us!</h2>

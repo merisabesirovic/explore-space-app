@@ -2,18 +2,19 @@ import "./App.css";
 import PlanetImages from "./pages/PlanetImages/PlanetImages";
 import MarsGenerator from "./pages/MarsGenerator/MarsGenerator";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./pages/Home/Home";
-import PicOfDay from "./pages/PicOfDay/PicOfDay";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import { Route,Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       {" "}
-      <Navbar />
-      <Home />
-      <PlanetImages></PlanetImages>
-      <MarsGenerator></MarsGenerator>
-      <PicOfDay></PicOfDay>
+      <Navbar/>
+      <Routes>
+      <Route  path="/AboutUs" element={<AboutUs/>}/>
+      <Route  path="/PlanetImages" element={<PlanetImages/>}/>
+      <Route  path="/MarsGenerator" element={<MarsGenerator/>}/>
+      </Routes>
     </div>
   );
 }
