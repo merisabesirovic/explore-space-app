@@ -20,7 +20,7 @@ const PlanetImages = () => {
         const response = await axios(options);
         const info = await response.data;
         setData(info);
-        // console.log(allData);
+        console.log(allData);
       } catch (error) {
         console.error(error);
       }
@@ -30,17 +30,25 @@ const PlanetImages = () => {
   }, []);
 
   return (
-    <div className="planet-image-container">
-      {allData.length &&
-        allData.map((e) => (
-          <PlanetCard
-            key={e.planetOrder}
-            name={e.name}
-            image={e.imgSrc.img}
-            desc={e.imgSrc.imgDescription}
-            wikiLink={e.wikiLink}
-          />
-        ))}
+    <div className="bg">
+      <h1
+        className="mars-title"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.459)" }}
+      >
+        Journey Through the Solar System: Exploring Our Planetary Neighbors
+      </h1>
+      <div className="planet-image-container">
+        {allData.length &&
+          allData.map((e) => (
+            <PlanetCard
+              key={e.planetOrder}
+              name={e.name}
+              image={e.imgSrc.img}
+              desc={e.imgSrc.imgDescription}
+              wikiLink={e.wikiLink}
+            />
+          ))}
+      </div>
     </div>
   );
 };

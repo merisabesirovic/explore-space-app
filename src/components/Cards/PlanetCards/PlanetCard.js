@@ -54,7 +54,7 @@ export default function PlanetCard({ name, image, desc, wikiLink }) {
             <div>
               <a className="desc-icon" href={wikiLink}>
                 <AutoStoriesIcon
-                  style={{ width: "25px", height: "25px", color: "#ffffff" }}
+                  style={{ width: "35px", height: "35px", color: "#ffffff" }}
                   className="desc-icon"
                 />
               </a>

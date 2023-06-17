@@ -1,0 +1,18 @@
+.video-container {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -60%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.text-overlay h2 {
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
