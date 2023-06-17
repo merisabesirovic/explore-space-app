@@ -7,7 +7,7 @@
 }
 .name {
   font-weight: 600;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .desc-container {
@@ -22,6 +22,6 @@
   width: 35px;
   height: 35px;
   color: #ffffff;
-  margin-right: 20px;
-  padding: 0 7px;
+  margin-right: 0px;
+  padding: 0 0px 0px 8px;
 }
