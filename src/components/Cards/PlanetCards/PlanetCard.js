@@ -46,7 +46,9 @@ export default function PlanetCard({ name, image, desc, wikiLink }) {
       >
         <Typography
           className="name"
-          style={{ overflow: "hidden" }}
+          style={{
+            overflow: "hidden",
+          }}
           level="h2"
           fontSize="lg"
           textColor="#fff"
