@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+}
+
+.dividerDiv {
+  margin-left: 37%;
+  margin-right: 37%;
+  margin-top: 18px;
+  border-top: 2px solid white;
+}

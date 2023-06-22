@@ -1,0 +1,20 @@
+.listingImage {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 20px solid #fff;
+}
+
+.listingContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.listingCenterText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

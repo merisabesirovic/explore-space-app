@@ -1,0 +1,22 @@
+.banner {
+  background-image: url("../../assets/pexels-philippe-donn-1169754.jpg");
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.dividerDiv {
+  margin-left: 37%;
+  margin-right: 37%;
+  margin-top: 25px;
+  border-top: 2px solid white;
+  margin-bottom: 25px;
+}
+
+.textStyle {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}

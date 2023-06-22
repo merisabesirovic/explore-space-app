@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Home from "./pages/Home/Home";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/MarsGenerator" element={<MarsGenerator />} />
         <Route path="/Galaxies" element={<PicOfDay />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
