@@ -26,7 +26,10 @@ export default function Navbar() {
         <NavLink to={"/PlanetImages"} style={{ textDecoration: "none" }}>
           <h3>IMAGES</h3>
         </NavLink>
-        <NavLink to={"/Galaxies"} style={{ textDecoration: "none" }}>
+        <NavLink
+          to={"/Galaxies"}
+          style={{ textDecoration: "none", color: "white" }}
+        >
           <h3>GALAXIES</h3>
         </NavLink>
         <NavLink to={"/AboutUs"} style={{ textDecoration: "none" }}>
