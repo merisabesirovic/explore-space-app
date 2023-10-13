@@ -6,7 +6,7 @@ export default function TeamCard({ imgUrl, name, linkedin, github }) {
   return (
     <div className="team-card">
       <div className="card-image">
-        <img src={imgUrl} alt="image"></img>
+        <img src={imgUrl} alt=""></img>
       </div>
       <h3>{name}</h3>
       <a href={github}>
