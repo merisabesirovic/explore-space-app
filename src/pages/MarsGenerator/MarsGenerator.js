@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import dayjs from "dayjs";
+
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import "./MarsGenerator.css";

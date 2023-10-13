@@ -6,7 +6,7 @@ export default function ListingCard({ title, image, link }) {
   return (
     <>
       <div className="listingContainer">
-        <img src={image} className="listingImage" />
+        <img src={image} alt="image" className="listingImage" />
         <div className="listingCenterText">
           <Link to={link} style={{ textDecoration: "none" }}>
             <Typography color={"white"} variant="h4">

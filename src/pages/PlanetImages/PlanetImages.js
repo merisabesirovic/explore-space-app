@@ -27,7 +27,7 @@ const PlanetImages = () => {
     };
 
     fetchData();
-  }, []);
+  });
 
   return (
     <div className="bg">
